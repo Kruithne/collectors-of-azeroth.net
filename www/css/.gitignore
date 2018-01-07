@@ -1,0 +1,7 @@
+# This directory is used to store compiled/compressed CSS files.
+
+# The purpose of this rule is to prevent these automatically generated files
+# from appearing in source control while maintaining the directory structure.
+
+*
+!.gitignore
