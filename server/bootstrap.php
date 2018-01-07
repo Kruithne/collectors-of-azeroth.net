@@ -14,7 +14,7 @@
 
 	// Set-up error handling..
 	$errGenerator = function() { return 'Error Report: ' . md5(time() + mt_rand()); };
-	$errDispatch = new MailDispatcher(['kruithne@gmail.com' => 'Kruithne'], 'error@collectors-of-azeroth.net', 'Error Reporter', $errGenerator);
+	$errDispatch = new MailDispatcher(['kruithne@gmail.com' => 'Kruithne'], 'error@collectors-of-azeroth.net', 'Collectors of Azeroth', $errGenerator);
 	new ErrorHandler($errDispatch, new HTMLErrorFormatter());
 
 	// Set-up database..
